@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+  <information>
+    <name>PLORE</name>
+    <version>BETA 1.0</version>
+    <description>
+      <![CDATA[개발자를 위한 티스토리 스킨]]>
+    </description>
+    <license>
+      <![CDATA[MIT License]]>
+    </license>
+  </information>
+  <author>
+    <name>Plorence</name>
+    <homepage>http://plorence.kr</homepage>
+    <email>ploseok@gmail.com</email>
+  </author>
+  <default>
+    <recentEntries>0</recentEntries>
+    <recentComments>0</recentComments>
+    <recentTrackbacks>0</recentTrackbacks>
+    <itemsOnGuestbook>10</itemsOnGuestbook>
+    <tagsInCloud>0</tagsInCloud>
+    <sortInCloud>40</sortInCloud>
+    <expandComment>0</expandComment>
+    <expandTrackback>0</expandTrackback>
+    <lengthOfRecentNotice>25</lengthOfRecentNotice>
+    <lengthOfRecentEntry>27</lengthOfRecentEntry>
+    <lengthOfRecentComment>30</lengthOfRecentComment>
+    <lengthOfRecentTrackback>30</lengthOfRecentTrackback>
+    <lengthOfLink>30</lengthOfLink>
+    <entriesOnPage>5</entriesOnPage>
+    <entriesOnList>7</entriesOnList>
+    <showListOnCategory>1</showListOnCategory>
+    <showListOnArchive>1</showListOnArchive>
+    <commentMessage>
+      <none>댓글이 없습니다.</none>
+      <single>댓글 &lt;span class="cnt"&gt;하나&lt;/span&gt; 달렸습니다.</single>
+    </commentMessage>
+    <trackbackMessage>
+      <none>받은 트랙백이 없고</none>
+      <single>트랙백이 &lt;span class="cnt"&gt;하나&lt;/span&gt;이고</single>
+    </trackbackMessage>
+    <tree>
+      <color>000000</color>
+      <bgColor>ffffff</bgColor>
+      <activeColor>000000</activeColor>
+      <activeBgColor>eeeeee</activeBgColor>
+      <labelLength>27</labelLength>
+      <showValue>1</showValue>
+    </tree>
+    <contentWidth>500</contentWidth>
+  </default>
+  <variables>
+  <variablegroup name="전역">
+    <variable>
+      <name>darkmode-allow</name>
+      <label><![CDATA[다크모드 허용 여부]]></label>
+      <description><![CDATA[다크모드를 사용가능한 환경이면 다크모드를 사용합니다.]]></description>
+      <type>BOOL</type>
+      <option></option>
+      <default>true</default>
+    </variable>
+  </variablegroup>
+  <variablegroup name="Header">
+    <variable>
+      <name>type</name>
+      <label><![CDATA[어떤 개발자?]]></label>
+      <description><![CDATA[이름 옆에 나오는 텍스트입니다.]]></description>
+      <type>STRING</type>
+      <option></option>
+      <default><![CDATA[]]></default>
+    </variable>
+  </variablegroup>
+  <variablegroup name="SocialLink">
+    <variable>
+      <name>github-bool</name>
+      <label><![CDATA[Github]]></label>
+      <description><![CDATA[Github를 사용하시는 경우]]></description>
+      <type>BOOL</type>
+      <option></option>
+      <default>false</default>
+    </variable>
+    <variable>
+      <name>github-link</name>
+      <label><![CDATA[GITHUB 프로필 URL]]></label>
+      <description><![CDATA[클릭시 이동할 URL입니다.]]></description>
+      <type>STRING</type>
+      <option></option>
+      <default><![CDATA[]]></default>
+    </variable>
+     <variable>
+      <name>twitter-bool</name>
+      <label><![CDATA[Twitter]]></label>
+      <description><![CDATA[Twitter를 사용하시는 경우]]></description>
+      <type>BOOL</type>
+      <option></option>
+      <default>false</default>
+    </variable>
+    <variable>
+      <name>twitter-link</name>
+      <label><![CDATA[twitter 프로필 URL]]></label>
+      <description><![CDATA[클릭시 이동할 URL입니다.]]></description>
+      <type>STRING</type>
+      <option></option>
+      <default><![CDATA[]]></default>
+    </variable>
+    <variable>
+      <name>reddit-bool</name>
+      <label><![CDATA[Reddit]]></label>
+      <description><![CDATA[Reddit을 사용하시는 경우]]></description>
+      <type>BOOL</type>
+      <option></option>
+      <default>false</default>
+    </variable>
+    <variable>
+      <name>reddit-link</name>
+      <label><![CDATA[Reddit 프로필 URL]]></label>
+      <description><![CDATA[클릭시 이동할 URL입니다.]]></description>
+      <type>STRING</type>
+      <option></option>
+      <default><![CDATA[]]></default>
+    </variable>
+        <variable>
+      <name>gitlab-bool</name>
+      <label><![CDATA[Gitlab]]></label>
+      <description><![CDATA[Gitlab을 사용하시는 경우]]></description>
+      <type>BOOL</type>
+      <option></option>
+      <default>false</default>
+    </variable>
+    <variable>
+      <name>gitlab-link</name>
+      <label><![CDATA[Gitlab 프로필 URL]]></label>
+      <description><![CDATA[클릭시 이동할 URL입니다.]]></description>
+      <type>STRING</type>
+      <option></option>
+      <default><![CDATA[]]></default>
+    </variable>
+            <variable>
+      <name>facebook-bool</name>
+      <label><![CDATA[Facebook]]></label>
+      <description><![CDATA[Facebook을 사용하시는 경우]]></description>
+      <type>BOOL</type>
+      <option></option>
+      <default>false</default>
+    </variable>
+    <variable>
+      <name>facebook-link</name>
+      <label><![CDATA[Facebook 프로필 URL]]></label>
+      <description><![CDATA[클릭시 이동할 URL입니다.]]></description>
+      <type>STRING</type>
+      <option></option>
+      <default><![CDATA[]]></default>
+    </variable>
+    <variable>
+      <name>bitbucket-bool</name>
+      <label><![CDATA[Bitbucket]]></label>
+      <description><![CDATA[Bitbucket 사용하시는 경우]]></description>
+      <type>BOOL</type>
+      <option></option>
+      <default>false</default>
+    </variable>
+    <variable>
+      <name>bitbucket-link</name>
+      <label><![CDATA[bitbucket 프로필 URL]]></label>
+      <description><![CDATA[클릭시 이동할 URL입니다.]]></description>
+      <type>STRING</type>
+      <option></option>
+      <default><![CDATA[]]></default>
+    </variable>
+    <variable>
+      <name>linkedin-bool</name>
+      <label><![CDATA[Linkedin]]></label>
+      <description><![CDATA[Google 사용하시는 경우]]></description>
+      <type>BOOL</type>
+      <option></option>
+      <default>false</default>
+    </variable>
+    <variable>
+      <name>linkedin-link</name>
+      <label><![CDATA[Linkedin 프로필 URL]]></label>
+      <description><![CDATA[클릭시 이동할 URL입니다.]]></description>
+      <type>STRING</type>
+      <option></option>
+      <default><![CDATA[]]></default>
+    </variable>
+    <variable>
+      <name>stackoverflow-bool</name>
+      <label><![CDATA[Stackoverflow]]></label>
+      <description><![CDATA[Stackoverflow 사용하시는 경우]]></description>
+      <type>BOOL</type>
+      <option></option>
+      <default>false</default>
+    </variable>
+    <variable>
+      <name>stackoverflow-link</name>
+      <label><![CDATA[Stackoverflow 프로필 URL]]></label>
+      <description><![CDATA[클릭시 이동할 URL입니다.]]></description>
+      <type>STRING</type>
+      <option></option>
+      <default><![CDATA[]]></default>
+    </variable>
+  </variablegroup>
+</variables>
+</skin>

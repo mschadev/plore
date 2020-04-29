@@ -1,0 +1,100 @@
+/*
+
+Atom One Dark by Daniel Gamage
+Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
+
+base:    #282c34
+mono-1:  #abb2bf
+mono-2:  #818896
+mono-3:  #5c6370
+hue-1:   #56b6c2
+hue-2:   #61aeee
+hue-3:   #c678dd
+hue-4:   #98c379
+hue-5:   #e06c75
+hue-5-2: #be5046
+hue-6:   #d19a66
+hue-6-2: #e6c07b
+
+*/
+@media (prefers-color-scheme: dark) {
+.darkmode-allow pre{
+  background: #282c34 !important;
+}
+.darkmode-allow .hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #abb2bf;
+  background: #282c34;
+}
+
+.darkmode-allow .hljs-comment,
+.darkmode-allow .hljs-quote {
+  color: #5c6370;
+  font-style: italic;
+}
+
+.darkmode-allow .hljs-doctag,
+.darkmode-allow .hljs-keyword,
+.darkmode-allow .hljs-formula {
+  color: #c678dd;
+}
+
+.darkmode-allow .hljs-section,
+.darkmode-allow .hljs-name,
+.darkmode-allow .hljs-selector-tag,
+.darkmode-allow .hljs-deletion,
+.darkmode-allow .hljs-subst {
+  color: #e06c75;
+}
+
+.darkmode-allow .hljs-literal {
+  color: #56b6c2;
+}
+
+.darkmode-allow .hljs-string,
+.darkmode-allow .hljs-regexp,
+.darkmode-allow .hljs-addition,
+.darkmode-allow .hljs-attribute,
+.darkmode-allow .hljs-meta-string {
+  color: #98c379;
+}
+
+.darkmode-allow .hljs-built_in,
+.darkmode-allow .hljs-class .hljs-title {
+  color: #e6c07b;
+}
+
+.darkmode-allow .hljs-attr,
+.darkmode-allow .hljs-variable,
+.darkmode-allow .hljs-template-variable,
+.darkmode-allow .hljs-type,
+.darkmode-allow .hljs-selector-class,
+.darkmode-allow .hljs-selector-attr,
+.darkmode-allow .hljs-selector-pseudo,
+.darkmode-allow .hljs-number {
+  color: #d19a66;
+}
+
+.darkmode-allow .hljs-symbol,
+.darkmode-allow .hljs-bullet,
+.darkmode-allow .hljs-link,
+.darkmode-allow .hljs-meta,
+.darkmode-allow .hljs-selector-id,
+.darkmode-allow .hljs-title {
+  color: #61aeee;
+}
+
+.darkmode-allow .hljs-emphasis {
+  font-style: italic;
+}
+
+.darkmode-allow .hljs-strong {
+  font-weight: bold;
+}
+
+.darkmode-allow .hljs-link {
+  text-decoration: underline;
+}
+}
