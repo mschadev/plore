@@ -1,6 +1,7 @@
 ![](./image1.jpg)
 # Plore
-![](https://img.shields.io/github/repo-size/zxc010613/plore)  
+![](https://img.shields.io/github/repo-size/zxc010613/plore)
+![](https://img.shields.io/github/downloads/zxc010613/plore/total)  
 개발자와 잘 어울리는 티스토리 스킨입니다.  
 
 # 목차
@@ -17,7 +18,7 @@
 글 내용 좌우로 아무것도 없으며, 오로지 글 내용에만 집중할 수 있습니다.
 + 글 스타일은 친숙한 Github와 흡사합니다.
 + [Bulma](https://bulma.io/) 사용
-+ 다크 모드 지원 (스킨 옵션, 브라우저가 지원해야함)
++ `BETA` 다크 모드 지원 (스킨 옵션, 브라우저가 지원해야함)
 + jquery를 사용하지 않음
 + 읽는 데 소요 되는 예상 시간 제공
 + 소셜 버튼 지원 (스킨 옵션, Stackoverflow, Github, Reddit 등)
