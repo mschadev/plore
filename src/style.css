@@ -246,6 +246,17 @@ pre {
 /* 게시글
 END===================================*/
 
+/* 댓글
+BEGIN=================================*/
+.commentList > li{
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+.commentList .media .media{
+margin-top: 0.5rem;
+}
+/* 댓글
+END===================================*/
 
 /*특정 Body 태그 아이디에서만 보이게 */
 
