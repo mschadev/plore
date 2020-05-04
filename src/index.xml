@@ -20,8 +20,8 @@
     <recentComments>0</recentComments>
     <recentTrackbacks>0</recentTrackbacks>
     <itemsOnGuestbook>10</itemsOnGuestbook>
-    <tagsInCloud>0</tagsInCloud>
-    <sortInCloud>40</sortInCloud>
+    <tagsInCloud>30</tagsInCloud>
+    <sortInCloud>1</sortInCloud>
     <expandComment>0</expandComment>
     <expandTrackback>0</expandTrackback>
     <lengthOfRecentNotice>25</lengthOfRecentNotice>
@@ -59,7 +59,7 @@
       <description><![CDATA[다크모드를 사용가능한 환경이면 다크모드를 사용합니다.]]></description>
       <type>BOOL</type>
       <option></option>
-      <default>true</default>
+      <default>false</default>
     </variable>
   </variablegroup>
   <variablegroup name="Header">
