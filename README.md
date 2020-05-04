@@ -3,7 +3,7 @@
 ![](https://img.shields.io/github/repo-size/zxc010613/plore)
 ![](https://img.shields.io/github/downloads/zxc010613/plore/total)  
 개발자와 잘 어울리는 티스토리 스킨입니다.  
-
+마크다운으로 쓴 글에 최적화되어 있습니다.
 # 목차
 + [특징](#특징)
     + [지원되는 브라우저](#지원되는-브라우저)
