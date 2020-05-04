@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-	<meta charset="utf-8"/>
-	   <title>[##_page_title_##] - [##_title_##]</title>
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	   <title>[##_page_title_##]::[##_title_##]</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
     <link rel="shortcut icon" href="[##_blog_link_##]favicon.ico" /> 
@@ -20,7 +20,7 @@
 		<link rel="stylesheet" href="./images/atom-one-dark.css">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="./style.css">
-</head>
+	</head>
 <s_if_var_darkmode-allow>
     <body id="[##_body_id_##]" class="darkmode-allow">
 </s_if_var_darkmode-allow>
@@ -217,7 +217,7 @@
                                 </div>
                             </div>
                             <s_guest_input_form>
-                                <article class="media">
+                                <div class="media">
                                     <div class="media-content">
 
                                         <div class="field">
@@ -266,7 +266,7 @@
                                             </div>
                                         </nav>
                                     </div>
-                                </article>
+                                </div>
                             </s_guest_input_form>
                             <s_rp>
 
@@ -276,7 +276,7 @@
 
                                             <li id='[##_guest_rep_id_##]'>
                                                 <div class="[##_guest_rep_class_##]">
-                                                    <article class="media">
+                                                    <div class="media">
                                                         <figure class="media-left">
                                                             <p class="image is-64x64">
                                                                 <img src="[##_rp_rep_logo_##]">
@@ -317,7 +317,7 @@
                                                                     <s_guest_reply_rep>
                                                                         <li id='[##_guest_rep_id_##]'>
                                                                             <div class="[##_guest_rep_class_##]">
-                                                                                <article class="media">
+                                                                                <div class="media">
                                                                                     <figure class="media-left">
                                                                                         <p class="image is-48x48">
                                                                                             <img
@@ -349,14 +349,14 @@
                                                                                             </p>
                                                                                         </div>
                                                                                     </div>
-                                                                                </article>
+                                                                                </div>
                                                                             </div>
                                                                         </li>
                                                                     </s_guest_reply_rep>
                                                                 </ul>
                                                             </s_guest_reply_container>
                                                         </div>
-                                                    </article>
+                                                    </div>
                                                 </div>
                                             </li>
 
@@ -417,19 +417,17 @@
                                         </a>
                                     </div>
                                 </s_ad_div>
-                                <article>
+                                <div id="content">
                                     [##_article_rep_desc_##]
-                                </article>
+                                </div>
                                 <s_tag_label>
                                     <div class="tag-list">
                                         [##_tag_label_rep_##]
                                     </div>
                                 </s_tag_label>
                                 <s_rp_count>
-                                    <p>
 																			댓글 
 																			<span class="has-text-info">[##_article_rep_rp_cnt_##]</span>
-																	</p>
                                 </s_rp_count>
                                 <s_rp>
 
@@ -440,7 +438,7 @@
 
                                                 <li id='[##_rp_rep_id_##]'>
                                                     <div class="[##_rp_rep_class_##]">
-                                                        <article class="media">
+                                                        <div class="media">
                                                             <figure class="media-left">
                                                                 <p class="image is-64x64">
                                                                     <img src="[##_rp_rep_logo_##]">
@@ -479,7 +477,7 @@
                                                                         <s_rp2_rep>
                                                                             <li id='[##_rp_rep_id_##]'>
                                                                                 <div class="[##_rp_rep_class_##]">
-                                                                                    <article class="media">
+                                                                                    <div class="media">
                                                                                         <figure class="media-left">
                                                                                             <p class="image is-48x48">
                                                                                                 <img
@@ -515,14 +513,14 @@
                                                                                                 </p>
                                                                                             </div>
                                                                                         </div>
-                                                                                    </article>
+                                                                                    </div>
                                                                                 </div>
                                                                             </li>
                                                                         </s_rp2_rep>
                                                                     </ul>
                                                                 </s_rp2_container>
                                                             </div>
-                                                        </article>
+                                                        </div>
                                                     </div>
                                                 </li>
 
@@ -533,7 +531,7 @@
 
                                     <s_rp_input_form>
 
-                                        <article class="media">
+                                        <div class="media">
                                             <div class="media-content">
 
                                                 <div class="field">
@@ -585,7 +583,7 @@
                                                     </div>
                                                 </nav>
                                             </div>
-                                        </article>
+                                        </div>
                                     </s_rp_input_form>
                                 </s_rp>
 
@@ -679,10 +677,10 @@ var post = document.getElementById("post");
 var bodyId = document.getElementsByTagName("body")[0].id;
 
 if (bodyId == 'tt-body-page' && post != null) {
-  var article = post.getElementsByTagName("article")[0];
-  var html1 = article.innerHTML.substr(0, article.innerHTML.indexOf("<div class=\"container_postbtn #post_button_group\">"));
+  var contentTag = document.getElementById("content");
+  var content = contentTag.innerHTML.substr(0, contentTag.innerHTML.indexOf("<div class=\"container_postbtn #post_button_group\">"));
 
-  var _readTime = readTime(html1, 120, 15, 1000, ['img', 'Image']),
+  var _readTime = readTime(content, 120, 15, 1000, ['img', 'Image']),
       humanizedDuration = _readTime.humanizedDuration,
       duration = _readTime.duration,
       totalWords = _readTime.totalWords,
@@ -696,29 +694,6 @@ if (bodyId == 'tt-body-page' && post != null) {
   readingTimeTag.innerText = humanizedDuration;
 }
 	</script>
-    <script>
-			/*
-        var post = document.getElementById("post");
-        var bodyId = document.getElementsByTagName("body")[0].id;
-        if (bodyId == 'tt-body-page' && post != null) {
-            var article = post.getElementsByClassName("tt_article_useless_p_margin")[0];
-            var html1 = article.innerHTML.substr(0, article.innerHTML.indexOf("<div class=\"container_postbtn #post_button_group\">"));
-            const {
-                humanizedDuration, // 'less than a minute'
-                duration, // 0.23272727272727273
-                totalWords, // 9
-                wordTime, // 0.03272727272727273
-                totalImages, // 1
-                imageTime, //  0.2
-                otherLanguageTimeCharacters, // 6
-                otherLanguageTime, // 0.012
-            } = readTime(html1, 120, 15, 1000, ['img', 'Image']);
-            var readingTimeTag = document.getElementById("reading-time");
-            readingTimeTag.innerText = humanizedDuration;
-        }
-			*/
-    </script>
-
 </body>
 
 </html>

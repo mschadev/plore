@@ -65,14 +65,14 @@ BEGIN=================================*/
 	.darkmode-allow #post {
 		color: rgba(255, 255, 255, 0.6);
 	}
-	.darkmode-allow #post>article,
-	.darkmode-allow #post>article p,
-	.darkmode-allow #post>article h6,
-	.darkmode-allow #post>article strong {
+	.darkmode-allow #post>#content,
+	.darkmode-allow #post>#content p,
+	.darkmode-allow #post>#content h6,
+	.darkmode-allow #post>#content strong {
 		color: rgba(255, 255, 255, 0.6);
 	}
-	.darkmode-allow #post>article table td,
-	.darkmode-allow #post>article table th {
+	.darkmode-allow #post>#content table td,
+	.darkmode-allow #post>#content table th {
 		border: 1px solid #565656;
 		color: rgba(255, 255, 255, 0.6);
 	}
@@ -192,10 +192,10 @@ BEGIN=================================*/
 	padding-top: 10px;
 }
 
-#post>article {
+#post>#content {
 	padding-bottom: 100px;
 }
-#post > article > pre{
+#post > #content > pre{
 margin-top:16px;
 }
 .tag-list {
@@ -206,7 +206,7 @@ margin-top:16px;
 	content: '#';
 }
 
-#post>article table {
+#post>#content table {
 	margin-bottom: 0px;
 }
 
@@ -222,7 +222,7 @@ pre {
 	display: none;
 }
 */
-article {
+#content {
 	padding-top: 50px;
 }
 
