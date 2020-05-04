@@ -192,14 +192,11 @@ BEGIN=================================*/
 	padding-top: 10px;
 }
 
-#post>#content {
-	padding-bottom: 100px;
-}
 #post > #content > pre{
 margin-top:16px;
 }
 .tag-list {
-	padding-bottom: 150px;
+	padding-bottom: 50px;
 }
 
 .tag-list>a::before {
