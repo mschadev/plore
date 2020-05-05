@@ -391,8 +391,7 @@
                                 <a href="[##_article_rep_category_link_##]"><span
                                         class="has-text-info">[##_article_rep_category_##]</span></a>
                                 <p id="post-info">[##_article_rep_date_year_##]. [##_article_rep_date_month_##].
-                                    [##_article_rep_date_day_##].
-                                    • <span id="reading-time"></span></p>
+                                    [##_article_rep_date_day_##]. <span id="reading-time"></span></p>
                                 <s_ad_div>
                                     <div id="post-admin" class="field has-addons">
 
@@ -661,7 +660,9 @@
 	<!--
     <script src="./images/reading-time.js"></script>
 -->
+	<s_if_var_reading-time>
 	<script src="./images/reading-time-es5.js"></script>
+		</s_if_var_reading-time>
 	<!--
 	<script defer src="./images/prefixfree.min.js"></script>
 -->
@@ -675,6 +676,7 @@
             singleLine: true
         });
     </script>
+	<s_if_var_reading-time>
 	<!-- ES5 -->
 	<script>
 		"use strict";
@@ -697,9 +699,10 @@ if (bodyId == 'tt-body-page' && post != null) {
       otherLanguageTime = _readTime.otherLanguageTime;
 
   var readingTimeTag = document.getElementById("reading-time");
-  readingTimeTag.innerText = humanizedDuration;
+  readingTimeTag.innerText = " • " + humanizedDuration;
 }
 	</script>
+		</s_if_var_reading-time>
 </body>
 
 </html>

@@ -2,7 +2,7 @@
 <skin>
   <information>
     <name>PLORE</name>
-    <version>BETA 1.0</version>
+    <version>0.0.5</version>
     <description>
       <![CDATA[개발자를 위한 티스토리 스킨]]>
     </description>
@@ -60,6 +60,16 @@
       <type>BOOL</type>
       <option></option>
       <default>false</default>
+    </variable>
+  </variablegroup>
+    <variablegroup name="글">
+    <variable>
+      <name>reading-time</name>
+      <label><![CDATA[예상 읽기 소요 시간 제공]]></label>
+      <description><![CDATA[글 내용을 분석해 예상 읽기 소요 시간을 제공합니다.]]></description>
+      <type>BOOL</type>
+      <option></option>
+      <default>true</default>
     </variable>
   </variablegroup>
   <variablegroup name="Header">
