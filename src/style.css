@@ -191,10 +191,6 @@ BEGIN=================================*/
 #post-admin {
 	padding-top: 10px;
 }
-
-#post > #content > pre{
-margin-top:16px;
-}
 .tag-list {
 	padding-bottom: 50px;
 }
@@ -208,17 +204,10 @@ margin-top:16px;
 }
 
 pre {
+	padding: 0px;
+	margin-top:16px;
 	margin-bottom: 16px;
 }
-/*
-.another_category {
-	display: none;
-}
-
-.container_postbtn {
-	display: none;
-}
-*/
 #content {
 	padding-top: 50px;
 }
@@ -376,7 +365,7 @@ BEGIN=================================*/
 	-ms-user-select: none;
 	user-select: none;
 	text-align: end !important;
-	color: #ccc;
+	color: #2B91AF;
 	vertical-align: top;
 	padding: 0px 20px 0px 0px !important;
 }
