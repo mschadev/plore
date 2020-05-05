@@ -27,90 +27,64 @@ BEGIN=================================*/
 END===================================*/
 
 /* All Device */
+
 /* 헤더 
 BEGIN=================================*/
-
 .social-link {
 	background-color: white;
 }
-
 .social-link i {
 	color: black;
 }
-
 .dropdown-content {
 	text-align: left;
 	padding-left: 10px;
 }
-
-
 /* N 이미지 */
-
 .dropdown-content img {
 	display: none;
 }
-
-
 /* 블로그 설명 */
-
 #blog_desc {
 	padding: 10px 0px 10px 0px;
 	white-space: pre-wrap;
 }
-
-
 /* 외부 링크 */
-
 .link-navbar {
 	padding: 10px 0px 15px 0px;
 }
-
-
 /* 카테고리 드롭다운 */
-
 .link_tit {
 	display: none;
 }
-
 .category_list>li>a>.c_cnt {
 	display: none;
 }
-
 .category_list>li {
 	text-align: start;
 }
-
 .sub_category_list {
 	margin-left: 20px;
 }
-
 .devel-type {
 	padding-left: 10px;
 }
-
-
 /* 헤더
 END===================================*/
-
-
 /* 게시글
 BEGIN=================================*/
-
 #post-admin {
 	padding-top: 10px;
 }
 .tag-list {
 	padding-bottom: 50px;
 }
-
 .tag-list>a::before {
 	content: '#';
 }
-
 #post>#content table {
 	margin-bottom: 0px;
 }
-
 pre {
 	padding: 0px;
 	margin-top:16px;
@@ -119,24 +93,18 @@ pre {
 #content {
 	padding-top: 50px;
 }
-
 .commentList li {
 	list-style: none;
 }
-
 #post ul {
 	list-style-type: disc;
 }
-
 #post ul ul {
 	list-style-type: circle;
 }
-
 #post ul ul ul {
 	list-style-type: square;
 }
-
-
 /* 게시글
 END===================================*/
 
@@ -153,85 +121,63 @@ margin-top: 0.5rem;
 END===================================*/
 
 /*특정 Body 태그 아이디에서만 보이게 */
-
 #paging {
 	display: none;
 }
-
 #tt-body-category #paging {
 	display: block;
 }
-
 #tt-body-index #paging {
 	display: block;
 }
-
 #tt-body-guestbook #paging {
 	display: block;
 }
-
 #guestbook {
 	display: none;
 }
-
 #tt-body-guestbook #guestbook {
 	display: block;
 }
-
 #taglog {
 	display: none;
 }
-
 #tt-body-tag #taglog {
 	display: block;
 }
-
 #search-result {
 	display: none;
 }
-
 #tt-body-category #search-result {
 	display: block;
 }
-
 #localog {
 	display: none;
 }
-
 #tt-body-location #localog {
 	display: block;
 }
-
-
 /* 인덱스 페이지
 BEGIN=================================*/
-
 main>.columns:last-child {
 	margin-bottom: 0px;
 	margin-top: 0px;
 }
-
-
 /* 인덱스 페이지
 END===================================*/
 
-
 /* Etc */
-
 .media .level-left .input {
 	width: 100px;
 }
-
 textarea,
 .input {
 	border-radius: 0px !important;
 	border: solid 1px #eee;
 }
-
 #social a {
 	margin: 0px 5px 0px 5px;
 }
-
 html,
 body {
 	overflow-x: hidden;
@@ -240,31 +186,25 @@ body {
 	width: 100%;
 	height: 100%;
 }
-
 body {
 	font-family: 'Noto Sans KR', sans-serif !important;
 }
-
 #post>article,
 textarea,
 .input {
 	font-family: 'Noto Sans KR', sans-serif;
 }
-
 .wrapper {
 	display: flex;
 	min-height: 100vh;
 	flex-direction: column;
 }
-
 main {
 	flex: 1;
 }
 
-
 /* highlight.js
 BEGIN=================================*/
-
 .hljs-ln-numbers {
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -277,41 +217,32 @@ BEGIN=================================*/
 	vertical-align: top;
 	padding: 0px 20px 0px 0px !important;
 }
-
 .hljs-ln-code {
 	padding: 0px !important;
 }
-
 .hljs-ln-line {
 	border: none !important;
 }
-
 .hljs-ln>tbody>tr {
 	background-color: transparent  !important;
 	border-top: none !important;
 }
-
-
 /*highlight.js
 END===================================*/
 
-
 /* Mobile Device */
-
 .link-navbar>li {
 	display: block;
 }
-
 header .hero-body {
 	padding: 1rem;
 }
 header figure{
-		width:64px;
-		height: 64px;
+	width:64px;
+	height: 64px;
 }
 
 /* Tablet & Desktop Device */
-
 @media all and (min-width:768px) {
 	.link-navbar>li {
 		display: inline;
@@ -331,19 +262,13 @@ header figure{
 	}
 }
 
-
 /* Tablet Device */
-
 @media all and (min-width:768px) and (max-width:1024px) {}
 
-
 /* Desktop Device */
-
 @media all and (min-width:1025px) {}
 
-
 /* Extension */
-
 .margin-0 {
 	margin: 0px 0px 0px 0px;
 }
