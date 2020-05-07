@@ -166,6 +166,14 @@ main>.columns:last-child {
 /* 인덱스 페이지
 END===================================*/
 
+/* 태그 페이지
+BEGIN=================================*/
+a[class^="cloud"]{
+	padding-right:2px;
+}
+/* 태그 페이지
+END===================================*/
+
 /* Etc */
 .media .level-left .input {
 	width: 100px;
