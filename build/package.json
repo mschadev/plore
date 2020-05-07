@@ -1,0 +1,22 @@
+{
+  "name": "build",
+  "version": "1.0.0",
+  "description": "build tool for plore(tistory skin)",
+  "main": "build.js",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@node-minify/clean-css": "^5.3.0",
+    "@node-minify/core": "^5.3.0",
+    "@node-minify/html-minifier": "^5.3.0",
+    "@node-minify/uglify-es": "^5.3.0",
+    "async": "^3.2.0",
+    "fs-extra": "^9.0.0",
+    "get-folder-size": "^2.0.1",
+    "purgecss": "^2.2.1",
+    "rimraf": "^3.0.2"
+  }
+}
