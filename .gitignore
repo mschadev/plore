@@ -1,2 +1,4 @@
 src/images/skinSettings.set
 *.zip
+build/node_modules
+release
