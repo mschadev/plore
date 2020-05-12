@@ -4,7 +4,7 @@
 - Scroll Spy 추가 (옵션 지원)
 ![](./gif1.gif)  
 
-### Google PageSpeed Insights
+### Google PageSpeed Insights(0.2.0)
 테스트 URL: `https://blog.plorence.kr/561`
 |회차|모바일|데스크톱|
 |---|------|-------|
