@@ -41,7 +41,7 @@
 |Safari | 9 |
 
 ## Google PageSpeed Insights
-- [0.2.0](https://github.com/zxc010613/plore/blob/develop/changelog.0.N.N.md#google-pagespeed-insights020)
+- [0.2.0](https://github.com/zxc010613/plore/blob/master/changelog.0.N.N.md#google-pagespeed-insights020)
 
 # 설치
 1. [Release](https://github.com/zxc010613/plore/releases)에서 가장 최신 버전의 파일을 다운받습니다.
