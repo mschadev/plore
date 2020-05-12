@@ -111,6 +111,20 @@ END===================================*/
 
 /* Scroll Spy
 BEGIN=================================*/
+  .menu-list a {
+	border-radius: 2px;
+	color: #4a4a4a;
+	display: block;
+	padding: 0.5em 0.75em;
+  }
+  .menu-list {
+	line-height: 1.25;
+  }
+  .menu-list a:hover {
+	background-color: whitesmoke;
+	color: #363636;
+  }
+
 .menu-list .is-active > a {
 	background-color: #3273dc;
   }
@@ -119,7 +133,7 @@ BEGIN=================================*/
 	color: #fff;
 }
   
-  .menu-list > ul {
+  .menu-list ul {
 	border-left: 1px solid #dbdbdb;
 	margin: 0.75em;
 	padding-left: 0.75em;
