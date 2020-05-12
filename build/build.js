@@ -16,7 +16,8 @@ const cssFiles = ["style.css",
      "images/vs2015.css",
      "images/font-awesome-all.css"]
 const jsFiles = [
-     "images/reading-time-es5.js"
+     "images/reading-time-es5.js",
+     "images/scroll-spy-extension.js"
 ]
 
 main();
