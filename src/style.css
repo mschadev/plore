@@ -26,6 +26,7 @@ BEGIN=================================*/
 /* IE10+
 END===================================*/
 
+
 /* All Device */
 
 /* 헤더 
@@ -108,6 +109,27 @@ pre {
 /* 게시글
 END===================================*/
 
+/* Scroll Spy
+BEGIN=================================*/
+.menu-list .is-active > a {
+	background-color: #3273dc;
+  }
+.menu-list .is-active > a{
+	background-color: #3273dc;
+	color: #fff;
+}
+  
+  .menu-list > ul {
+	border-left: 1px solid #dbdbdb;
+	margin: 0.75em;
+	padding-left: 0.75em;
+  }
+#scroll-spy-menu{
+	position:fixed;
+}
+/* Scroll Spy
+END===================================*/
+
 /* 댓글
 BEGIN=================================*/
 .commentList > li{
@@ -188,7 +210,6 @@ textarea,
 }
 html,
 body {
-	overflow-x: hidden;
 	margin: 0;
 	padding: 0;
 	width: 100%;
@@ -242,6 +263,7 @@ END===================================*/
 .link-navbar>li {
 	display: block;
 }
+
 header .hero-body {
 	padding: 1rem;
 }

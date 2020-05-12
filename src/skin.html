@@ -561,6 +561,10 @@
                     </div>
                 </div>
             </div>
+            <div class="column is-3-fullhd is-3-desktop is-0-tablet is-0-mobile">
+                <aside id="scroll-spy-menu" class="menu is-small">
+                </aside>
+            </div>
         </div>
     </main>
     <hr class="margin-0">
@@ -575,6 +579,21 @@
         </div>
     </footer>
 </div>
+<s_if_var_scroll-spy>
+<!-- Get a specific version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe@5.1.1/dist/gumshoe.polyfills.min.js"></script>
+<script src="./images/scroll-spy-extension.js"></script>
+<script>
+    var resultHTML = CreateAnchorListHTML("#content h1, #content h2");
+    document.getElementById("scroll-spy-menu").appendChild(resultHTML);
+    var spy = new Gumshoe('#scroll-spy-menu a', {
+        navClass: 'is-active', // applied to the nav list item
+        contentClass: 'is-active', // applied to the content
+        nested: true,
+        nestedClass: 'is-active'
+    });
+</script>
+</s_if_var_scroll-spy>
 <s_if_var_reading-time>
     <script src="./images/reading-time-es5.js"></script>
 </s_if_var_reading-time>

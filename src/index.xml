@@ -71,6 +71,14 @@
       <option></option>
       <default>true</default>
     </variable>
+    <variable>
+      <name>scroll-spy</name>
+      <label><![CDATA[Scroll Spy]]></label>
+      <description><![CDATA[게시글 옆에 목차를 제공합니다.(H1, H2만 지원)]]></description>
+      <type>BOOL</type>
+      <option></option>
+      <default>true</default>
+    </variable>
   </variablegroup>
   <variablegroup name="Header">
     <variable>
