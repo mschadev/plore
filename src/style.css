@@ -193,6 +193,12 @@ END===================================*/
 #tt-body-location #localog {
 	display: block;
 }
+#article-protected{
+	display:none;
+}
+#tt-body-page #article-protected{
+	display:block;
+}
 /* 인덱스 페이지
 BEGIN=================================*/
 main>.columns:last-child {

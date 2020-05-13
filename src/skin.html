@@ -350,6 +350,29 @@
                         <p class="subtitle">[##_list_count_##]건</p>
                     </div>
                 </s_list>
+                <s_article_protected>
+                    <div id="article-protected" class="hero has-text-centered">
+                        <p class="title">[##_article_rep_title_##]</p>
+                        <p class="subtitle">보호되어 있는 글입니다. 내용을 보시려면 비밀번호를 입력하세요.</p>
+                        <div class="hero-body">
+                            <div class="container">
+                                <div class="columns is-centered">
+                                    <div class="field has-addons">
+                                        <div class="control">
+                                            <input class="input" type="text" placeholder="비밀번호" maxlength="16"
+                                                id="[##_article_password_##]" name="[##_article_password_##]" value=""
+                                                onkeydown="if (event.keyCode == 13)[##_article_dissolve_##]">
+                                        </div>
+                                        <div class="control">
+                                            <button class="button is-link"
+                                                onclick="[##_article_dissolve_##]">보내기</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </s_article_protected>
                 <s_article_rep>
                     <s_permalink_article_rep>
                         <div id="post" class="container">
@@ -580,19 +603,19 @@
     </footer>
 </div>
 <s_if_var_scroll-spy>
-<!-- Get a specific version -->
-<script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe@5.1.1/dist/gumshoe.polyfills.min.js"></script>
-<script src="./images/scroll-spy-extension.js"></script>
-<script>
-    var resultHTML = CreateAnchorListHTML("#content h1, #content h2");
-    document.getElementById("scroll-spy-menu").appendChild(resultHTML);
-    var spy = new Gumshoe('#scroll-spy-menu a', {
-        navClass: 'is-active', // applied to the nav list item
-        contentClass: 'is-active', // applied to the content
-        nested: true,
-        nestedClass: 'is-active'
-    });
-</script>
+    <!-- Get a specific version -->
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe@5.1.1/dist/gumshoe.polyfills.min.js"></script>
+    <script src="./images/scroll-spy-extension.js"></script>
+    <script>
+        var resultHTML = CreateAnchorListHTML("#content h1, #content h2");
+        document.getElementById("scroll-spy-menu").appendChild(resultHTML);
+        var spy = new Gumshoe('#scroll-spy-menu a', {
+            navClass: 'is-active', // applied to the nav list item
+            contentClass: 'is-active', // applied to the content
+            nested: true,
+            nestedClass: 'is-active'
+        });
+    </script>
 </s_if_var_scroll-spy>
 <s_if_var_reading-time>
     <script src="./images/reading-time-es5.js"></script>
